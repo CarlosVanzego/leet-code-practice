@@ -29,7 +29,7 @@
 #         self.left = left
 #         self.right = right
 class Solution:
-    def checkTree(self, root: Optional[TreeNode]) -> bool:
+    def checkTree(self, root: Optional[TreeNode]) -> bool: # type: ignore
 
         if root.val == root.left.val + root.right.val:
             return True
