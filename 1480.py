@@ -23,3 +23,14 @@
 # -10^6 <= nums[i] <= 10^6
 
 # Solution
+class Solution:
+    def runningSum(self, nums: List[int]) -> List[int]:
+        results = []
+        sum = 0 
+
+        for i in nums:
+            sum += i
+
+            results.append(sum)
+
+        return results
